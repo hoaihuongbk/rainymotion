@@ -1,5 +1,4 @@
 from setuptools import setup
-import rainymotion
 
 setup(
     name="rainymotion",
@@ -10,6 +9,9 @@ setup(
     url="https//www.github.com/hydrogo/rainymotion",
     packages=["rainymotion"],
     include_package_data=True,
+    install_requires=[
+        'opencv-python-headless'
+    ],
     license="MIT-License",
     keywords="precipitation nowcasting radar",
     classifiers=[
